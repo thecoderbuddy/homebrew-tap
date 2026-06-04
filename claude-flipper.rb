@@ -11,7 +11,7 @@ class ClaudeFlipper < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v1.0.0/claude-flipper_darwin_amd64.tar.gz"
-      sha256 "9f5007898cdbee9d2d6cf5972bf39ceaa926265d8b880b1f31f53585c5df5fb9"
+      sha256 "ef418e83a8b2312d50139dcb793c78d16309de4f27d93d0f5159db6c1f01d25d"
 
       define_method(:install) do
         bin.install "flipper"
@@ -19,7 +19,7 @@ class ClaudeFlipper < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v1.0.0/claude-flipper_darwin_arm64.tar.gz"
-      sha256 "b0d4e5ca71a000b53be2f38c089b04680142476c5e86e181e31cb1f7a9b8cefa"
+      sha256 "7b6a673ace844b375c8a252dad936cdaf18dd732f22904d6fcec99a69fe66899"
 
       define_method(:install) do
         bin.install "flipper"
@@ -30,14 +30,14 @@ class ClaudeFlipper < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v1.0.0/claude-flipper_linux_amd64.tar.gz"
-      sha256 "f9b1f9cc818dfe8b21ee45f1a5a234c122239a35d8cd91757db90fef7b59aee4"
+      sha256 "8a3e6ddff62d187f1c4f872ebb684b30fc1829b2a7921b6364b67dff6959c11e"
       define_method(:install) do
         bin.install "flipper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v1.0.0/claude-flipper_linux_arm64.tar.gz"
-      sha256 "f86205f36e5e5f620d621e9171c56bd3ec8911f3d01d042a69efd7ba7981b9e6"
+      sha256 "84649c696f4e8a4445e3ca70b5c5f40767dbf7668c6a100289d050ddd64cfa77"
       define_method(:install) do
         bin.install "flipper"
       end
