@@ -5,21 +5,21 @@
 class ClaudeFlipper < Formula
   desc "Flip between multiple Claude Code accounts without logging out and back in."
   homepage "https://github.com/thecoderbuddy/claude-flipper"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.10.0/claude-flipper_darwin_amd64.tar.gz"
-      sha256 "5746a080e757eab21fe93632ebf97e250290745814e024026e28f64247f6cf1f"
+      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.11.0/claude-flipper_darwin_amd64.tar.gz"
+      sha256 "d56adc1893e1b6150c740f07d1336d53f0cfe87c637616c4bf42fb2c478e3d04"
 
       define_method(:install) do
         bin.install "flipper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.10.0/claude-flipper_darwin_arm64.tar.gz"
-      sha256 "b5bed1b58ee503baf1938312d320ce7c94190da02bfb50ad8810c8937690c95e"
+      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.11.0/claude-flipper_darwin_arm64.tar.gz"
+      sha256 "31111109aebc236dc03336909b075f61bdca404055a46f77a2c91afbe0bf01f5"
 
       define_method(:install) do
         bin.install "flipper"
@@ -29,15 +29,15 @@ class ClaudeFlipper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.10.0/claude-flipper_linux_amd64.tar.gz"
-      sha256 "ea4d689e3cf0bda4646d03de7247419588eaf4b7bb31db537dd44a159d470f4c"
+      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.11.0/claude-flipper_linux_amd64.tar.gz"
+      sha256 "1158032bd0d72cc58384b2991bca3c86f95f5afa6ddc6ed775098c7caebebc54"
       define_method(:install) do
         bin.install "flipper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.10.0/claude-flipper_linux_arm64.tar.gz"
-      sha256 "722a729506dba033d56fdd0d4d066e09a6c427bdbd51fcc9f0dc834f684a9c46"
+      url "https://github.com/thecoderbuddy/claude-flipper/releases/download/v0.11.0/claude-flipper_linux_arm64.tar.gz"
+      sha256 "16742d4e425afbb228c15c57cdd8d0fa18c724cd5d2cf63ae91905ea791d6cb1"
       define_method(:install) do
         bin.install "flipper"
       end
